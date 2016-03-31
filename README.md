@@ -1,6 +1,8 @@
 # jenkins-qnap
 jenkins-qnap
 
-RUN
+## RUN
+```
 chmod a+x *.sh
 docker build -t {name} . 
+```
