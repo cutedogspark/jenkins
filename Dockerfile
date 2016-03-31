@@ -16,8 +16,6 @@ ARG group=jenkins
 ARG uid=1000
 ARG gid=1000
 
-# RUN ln -s /usr/bin/nodejs /usr/bin/node
-
 RUN groupadd -g ${gid} ${group} \
     && useradd -d "$JENKINS_HOME" -u ${uid} -g ${gid} -m -s /bin/bash ${user}
 
